@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="50%" stop-color="#110f24"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6E5BFF" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#6E5BFF" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#6E5BFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#6E5BFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="divider" x1="370" y1="0" x2="530" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6E5BFF" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#6E5BFF" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#6E5BFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#6E5BFF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.5" fill="#6E5BFF" opacity="0.15"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="250" fill="url(#bg)" rx="6"/>
+  <rect width="900" height="250" fill="url(#grid)" rx="6"/>
+
+  <!-- Center glow -->
+  <ellipse cx="450" cy="110" rx="250" ry="80" fill="#6E5BFF" opacity="0.035"/>
+
+  <!-- Edge accents -->
+  <rect y="0" width="900" height="1.5" fill="url(#accent)"/>
+  <rect y="248.5" width="900" height="1.5" fill="url(#accent)"/>
+
+  <!-- Subtle border for dark mode definition -->
+  <rect x="0.5" y="0.5" width="899" height="249" fill="none" stroke="#6E5BFF" stroke-width="0.5" rx="6" opacity="0.12"/>
+
+  <!-- Corner brackets -->
+  <g opacity="0.2" stroke="#6E5BFF" stroke-width="1" fill="none">
+    <polyline points="24,48 24,24 60,24"/>
+    <polyline points="840,24 876,24 876,48"/>
+    <polyline points="24,202 24,226 60,226"/>
+    <polyline points="840,226 876,226 876,202"/>
+  </g>
+
+  <!-- Company name -->
+  <text x="450" y="105" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="8">KANOPY LABS</text>
+
+  <!-- Divider -->
+  <rect x="370" y="118" width="160" height="1" fill="url(#divider)" rx="0.5"/>
+
+  <!-- Tagline -->
+  <text x="450" y="150" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#8b82c0" text-anchor="middle" letter-spacing="4">THE PRODUCT TEAM FOUNDERS WISH THEY HAD</text>
+
+  <!-- Website -->
+  <text x="450" y="198" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5" fill="#6E5BFF" text-anchor="middle" letter-spacing="2" opacity="0.6">KANOPYLABS.COM</text>
+</svg>
