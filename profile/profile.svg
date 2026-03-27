@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 572" fill="none">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="40"/>
+    </filter>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.5" fill="#6E5BFF" opacity="0.12"/>
+    </pattern>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6E5BFF" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#6E5BFF" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#6E5BFF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#6E5BFF" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="heroClip">
+      <rect width="880" height="195" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background visible in card gaps -->
+  <rect width="880" height="572" fill="#06060e" rx="14"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- HERO CARD                                   -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g clip-path="url(#heroClip)">
+    <rect width="880" height="195" fill="#0d0b1a" rx="14"/>
+    <rect width="880" height="195" fill="url(#dots)" rx="14"/>
+
+    <!-- Animated glow orbs -->
+    <ellipse cx="660" cy="65" rx="140" ry="80" fill="#6E5BFF" filter="url(#glow)" opacity="0.04">
+      <animate attributeName="opacity" values="0.03;0.07;0.03" dur="6s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="220" cy="140" rx="120" ry="70" fill="#4D38EC" filter="url(#glow)" opacity="0.03">
+      <animate attributeName="opacity" values="0.02;0.06;0.02" dur="8s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Corner brackets with draw-in animation -->
+    <polyline points="22,46 22,22 58,22" stroke="#6E5BFF" stroke-width="1" fill="none" opacity="0.2" stroke-dasharray="60" stroke-dashoffset="60">
+      <animate attributeName="stroke-dashoffset" from="60" to="0" dur="1.2s" begin="0s" fill="freeze"/>
+    </polyline>
+    <polyline points="822,22 858,22 858,46" stroke="#6E5BFF" stroke-width="1" fill="none" opacity="0.2" stroke-dasharray="60" stroke-dashoffset="60">
+      <animate attributeName="stroke-dashoffset" from="60" to="0" dur="1.2s" begin="0.15s" fill="freeze"/>
+    </polyline>
+    <polyline points="22,149 22,173 58,173" stroke="#6E5BFF" stroke-width="1" fill="none" opacity="0.2" stroke-dasharray="60" stroke-dashoffset="60">
+      <animate attributeName="stroke-dashoffset" from="60" to="0" dur="1.2s" begin="0.3s" fill="freeze"/>
+    </polyline>
+    <polyline points="822,173 858,173 858,149" stroke="#6E5BFF" stroke-width="1" fill="none" opacity="0.2" stroke-dasharray="60" stroke-dashoffset="60">
+      <animate attributeName="stroke-dashoffset" from="60" to="0" dur="1.2s" begin="0.45s" fill="freeze"/>
+    </polyline>
+
+    <!-- Company name -->
+    <text x="440" y="86" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="48" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="10">KANOPY LABS</text>
+
+    <!-- Divider -->
+    <rect x="340" y="100" width="200" height="1" fill="url(#lineGrad)"/>
+
+    <!-- Tagline -->
+    <text x="440" y="130" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#8b82c0" text-anchor="middle" letter-spacing="3.5">THE PRODUCT TEAM FOUNDERS WISH THEY HAD</text>
+
+    <!-- Website -->
+    <text x="440" y="168" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#6E5BFF" text-anchor="middle" letter-spacing="2.5" opacity="0.5">KANOPYLABS.COM</text>
+  </g>
+
+  <!-- Hero border (outside clip so stroke isn't clipped) -->
+  <rect width="880" height="195" fill="none" rx="14" stroke="#6E5BFF" stroke-opacity="0.08"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- STAT CARDS                                  -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Stat 1: Products -->
+  <rect x="0" y="201" width="215.5" height="105" fill="#0d0b1a" rx="12" stroke="#6E5BFF" stroke-opacity="0.08"/>
+  <rect x="78" y="201" width="60" height="2" fill="#6E5BFF" rx="1" opacity="0.35"/>
+  <text x="107.75" y="260" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">50+</text>
+  <text x="107.75" y="283" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#6b6490" text-anchor="middle" letter-spacing="1.5">PRODUCTS LAUNCHED</text>
+
+  <!-- Stat 2: Users -->
+  <rect x="221.5" y="201" width="215.5" height="105" fill="#0d0b1a" rx="12" stroke="#5A47E6" stroke-opacity="0.08"/>
+  <rect x="299.5" y="201" width="60" height="2" fill="#5A47E6" rx="1" opacity="0.35"/>
+  <text x="329.25" y="260" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">1M+</text>
+  <text x="329.25" y="283" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#6b6490" text-anchor="middle" letter-spacing="1.5">USERS REACHED</text>
+
+  <!-- Stat 3: Transactions -->
+  <rect x="443" y="201" width="215.5" height="105" fill="#0d0b1a" rx="12" stroke="#4D38EC" stroke-opacity="0.08"/>
+  <rect x="520.5" y="201" width="60" height="2" fill="#4D38EC" rx="1" opacity="0.35"/>
+  <text x="550.75" y="260" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">$30M+</text>
+  <text x="550.75" y="283" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#6b6490" text-anchor="middle" letter-spacing="1.5">TRANSACTIONS PROCESSED</text>
+
+  <!-- Stat 4: Years -->
+  <rect x="664.5" y="201" width="215.5" height="105" fill="#0d0b1a" rx="12" stroke="#7B6AFF" stroke-opacity="0.08"/>
+  <rect x="742.25" y="201" width="60" height="2" fill="#7B6AFF" rx="1" opacity="0.35"/>
+  <text x="772.25" y="260" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">6+</text>
+  <text x="772.25" y="283" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#6b6490" text-anchor="middle" letter-spacing="1.5">YEARS · SINCE 2019</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- WHAT WE BUILD                               -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="0" y="312" width="437" height="260" fill="#0d0b1a" rx="12" stroke="#6E5BFF" stroke-opacity="0.08"/>
+
+  <text x="32" y="346" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#6E5BFF" letter-spacing="2.5">WHAT WE BUILD</text>
+  <rect x="32" y="354" width="60" height="1" fill="#6E5BFF" opacity="0.15"/>
+
+  <!-- Mobile Apps -->
+  <circle cx="38" cy="381" r="3" fill="#6E5BFF" opacity="0.5"/>
+  <text x="52" y="385" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#e8e6f0">Mobile Apps</text>
+  <text x="52" y="401" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6b6490">iOS &amp; Android, built for scale</text>
+
+  <!-- Web Platforms -->
+  <circle cx="38" cy="419" r="3" fill="#6E5BFF" opacity="0.5"/>
+  <text x="52" y="423" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#e8e6f0">Web Platforms</text>
+  <text x="52" y="439" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6b6490">Full-stack, MVP to production</text>
+
+  <!-- AI Tools -->
+  <circle cx="38" cy="457" r="3" fill="#6E5BFF" opacity="0.5"/>
+  <text x="52" y="461" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#e8e6f0">AI Tools</text>
+  <text x="52" y="477" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6b6490">$10K MRR in month one</text>
+
+  <!-- SaaS Products -->
+  <circle cx="38" cy="495" r="3" fill="#6E5BFF" opacity="0.5"/>
+  <text x="52" y="499" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#e8e6f0">SaaS Products</text>
+  <text x="52" y="515" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6b6490">Billing, auth, analytics built in</text>
+
+  <!-- Custom Software -->
+  <circle cx="38" cy="533" r="3" fill="#6E5BFF" opacity="0.5"/>
+  <text x="52" y="537" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#e8e6f0">Custom Software</text>
+  <text x="52" y="553" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6b6490">50+ products shipped</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- TECH STACK                                  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="443" y="312" width="437" height="260" fill="#0d0b1a" rx="12" stroke="#6E5BFF" stroke-opacity="0.08"/>
+
+  <text x="475" y="346" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#6E5BFF" letter-spacing="2.5">TECH STACK</text>
+  <rect x="475" y="354" width="50" height="1" fill="#6E5BFF" opacity="0.15"/>
+
+  <!-- Frontend -->
+  <text x="475" y="381" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#6E5BFF" opacity="0.7" letter-spacing="2">FRONTEND</text>
+  <text x="475" y="399" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#e8e6f0">React · Next.js · TypeScript · Tailwind</text>
+
+  <!-- Mobile -->
+  <text x="475" y="427" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#5A47E6" opacity="0.7" letter-spacing="2">MOBILE</text>
+  <text x="475" y="445" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#e8e6f0">React Native · Flutter · Swift</text>
+
+  <!-- Backend -->
+  <text x="475" y="473" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#4D38EC" opacity="0.7" letter-spacing="2">BACKEND</text>
+  <text x="475" y="491" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#e8e6f0">Node.js · Python · GraphQL</text>
+  <text x="475" y="509" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#e8e6f0">REST APIs · WebSockets</text>
+
+  <!-- Data & Infrastructure -->
+  <text x="475" y="537" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#7B6AFF" opacity="0.7" letter-spacing="2">DATA &amp; INFRASTRUCTURE</text>
+  <text x="475" y="555" font-family="'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#e8e6f0">MongoDB · PostgreSQL · AWS</text>
+</svg>
