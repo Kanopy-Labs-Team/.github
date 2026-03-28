@@ -1,17 +1,33 @@
-<div align="center">
+## Kanopy Labs
 
-<img src="./profile.svg" width="100%" alt="Kanopy Labs — Product development studio. 50+ products launched, 1M+ users reached, $30M+ transactions processed. We build mobile apps, web platforms, AI tools, SaaS products, and custom software." />
+**The product team founders wish they had.**
 
-<br/>
+We're a product development studio that builds mobile apps, AI tools, SaaS platforms, and custom software for startups and growing businesses. Founded in 2019, based in Ramsey, NJ.
 
-<a href="https://kanopylabs.com/get-started">
-<img src="https://img.shields.io/badge/GET_STARTED-6E5BFF?style=for-the-badge" alt="Get Started" />
-</a>
+### By the numbers
 
-<br/><br/>
+| 50+ Products Launched | 1M+ Users Reached | $30M+ Transactions Processed | 6+ Years Shipping |
+|:---:|:---:|:---:|:---:|
 
-<a href="https://kanopylabs.com">kanopylabs.com</a> · <a href="https://www.linkedin.com/company/kanopy-labs">LinkedIn</a> · <a href="https://www.instagram.com/kanopy.labs/">Instagram</a> · <a href="https://www.tiktok.com/@kanopy.labs">TikTok</a> · <a href="https://www.youtube.com/@KanopyLabs">YouTube</a> · <a href="https://x.com/Kanopy_labs_">X</a>
+### What we build
 
-<sub>nate@kanopylabs.com · Ramsey, NJ</sub>
+- **Mobile Apps** · Native and cross-platform for iOS and Android
+- **Web Platforms** · Full-stack applications from MVP to production
+- **AI Tools** · LLM integrations, automation, AI-powered products
+- **SaaS Products** · Subscription platforms with billing, auth, analytics
+- **Custom Software** · E-commerce, fintech, social, CRM, real estate, events
 
-</div>
+### Tech stack
+
+**Frontend:** React, Next.js, TypeScript, Tailwind CSS
+**Mobile:** React Native, Flutter, Swift
+**Backend:** Node.js, Python, GraphQL, REST APIs, WebSockets
+**Data & Infra:** MongoDB, PostgreSQL, AWS
+
+### Work with us
+
+**[kanopylabs.com/get-started](https://kanopylabs.com/get-started)**
+
+[Website](https://kanopylabs.com) · [LinkedIn](https://www.linkedin.com/company/kanopy-labs) · [Instagram](https://www.instagram.com/kanopy.labs/) · [TikTok](https://www.tiktok.com/@kanopy.labs) · [YouTube](https://www.youtube.com/@KanopyLabs) · [X](https://x.com/Kanopy_labs_)
+
+nate@kanopylabs.com
